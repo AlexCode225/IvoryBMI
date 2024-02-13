@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".Checkit">
+
+
+    <ImageView
+        android:id="@+id/checkimgview"
+        android:layout_width="279dp"
+        android:layout_height="172dp"
+        android:layout_above="@+id/textop"
+        android:layout_alignParentStart="true"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="99dp"
+        android:padding="10dp"
+        android:src="@drawable/check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/textop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+
+
+            android:fontFamily="sans-serif-black"
+            android:text="BMI Calculator"
+            android:textAlignment="center"
+            android:textColor="@color/g"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/BMIresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-black"
+            android:text="55"
+            android:textAlignment="center"
+            android:textColor="#2D3A27"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/checkis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BMIresult"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="134dp"
+            android:textAlignment="center"
+            android:text="BMI Category is: "
+
+            android:textColor="@color/g"
+            android:textSize="24sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/CalculateAgain"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="21dp"
+        android:textSize="25dp"
+        android:textColor="#8BFF03"
+        android:layout_marginBottom="102dp"
+        android:text="Calculate Again" />
+
+
+
+</RelativeLayout>
